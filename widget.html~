@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+
+How Old is Your Baby?!?!: <input type="text" id="ageInMonths" value="Enter baby's age in months...">
+
+<button onclick="CalculateAge()">Calculate</button>
+
+<p>Just say <input type="text" id="ageInYears"> Years!</p>
+
+
+<script>
+function CalculateAge() {
+document.getElementById("ageInYears").value = document.getElementById("ageInMonths").value / 12.0;
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+  amzn_assoc_ad_type = "contextual";
+  amzn_assoc_tracking_id = "jagahanassounds";
+  amzn_assoc_marketplace = "amazon";
+  amzn_assoc_region = "US";
+  amzn_assoc_placement = "TIA4TVDGZ7F6OQVT";
+  amzn_assoc_linkid = "TIA4TVDGZ7F6OQVT";
+  amzn_assoc_emphasize_categories = "165796011";
+  amzn_assoc_fallback_products = "B00HT6E6GW, B00005V6C8, 0788856898";
+  amzn_assoc_width = "728";
+  amzn_assoc_height = "90";
+</script>
+<script type="text/javascript" language="javascript" src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=US&source=ac"></script>
+
+</center>
+</body>
+</html>
