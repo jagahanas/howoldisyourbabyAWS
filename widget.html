@@ -3,19 +3,24 @@
 <body>
 <center>
 
-How Old is Your Baby?!?!: <input type="text" id="ageInMonths" value="Enter baby's age in months...">
+	How Old is Your Baby?!?!: <input type="text" id="ageInMonths" value="Enter baby's age in months...">
 
-<button onclick="CalculateAge()">Calculate</button>
+	<button onclick="CalculateAge()">Calculate</button>
 
-<p>Just say <input type="text" id="ageInYears"> Years Old!!</p>
+	<p>Just say <input type="text" id="ageInYears"> Years Old!!</p>
 
 
 <script>
-function CalculateAge() {
-	var ageinyrexact, ageinyrround;
-	ageinyrexact = document.getElementById("ageInMonths").value / 12.0;
-	document.getElementById("ageInYears").value 
-}
+	function CalculateAge() {
+		var ageinyrexact, ageinyrround;
+		if (!isNaN(document.getElementById("ageInMonths").value)){
+			ageinyrexact = document.getElementById("ageInMonths").value / 12.0;
+			ageinyrround = Math.round(4.0*ageinyrexact)/4.0;
+			document.getElementById("ageInYears").value = ageinyrround;
+		} else {
+			document.getElementById("ageInYears").value = "That's not a number!";
+		}
+	}
 </script>
 
 <script type="text/javascript" language="javascript">
@@ -35,3 +40,4 @@ function CalculateAge() {
 </center>
 </body>
 </html>
+

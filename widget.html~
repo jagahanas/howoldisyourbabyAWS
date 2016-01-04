@@ -7,12 +7,14 @@ How Old is Your Baby?!?!: <input type="text" id="ageInMonths" value="Enter baby'
 
 <button onclick="CalculateAge()">Calculate</button>
 
-<p>Just say <input type="text" id="ageInYears"> Years!</p>
+<p>Just say <input type="text" id="ageInYears"> Years Old!!</p>
 
 
 <script>
 function CalculateAge() {
-document.getElementById("ageInYears").value = document.getElementById("ageInMonths").value / 12.0;
+	var ageinyrexact, ageinyrround;
+	ageinyrexact = document.getElementById("ageInMonths").value / 12.0;
+	document.getElementById("ageInYears").value 
 }
 </script>
 
